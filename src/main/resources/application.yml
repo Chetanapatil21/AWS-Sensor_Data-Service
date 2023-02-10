@@ -1,0 +1,17 @@
+logging:
+  file:
+    name: LogInfo.log
+  level:
+    com:
+      awsiot: INFO
+server:
+  port: 8001
+spring:
+  application:
+    name: SENSOR-DATA
+aws:
+  accessKeyId: AKIAUY743M7GXQA7D6OH
+  secretKeyId: rSUt+Yf0wRO87ncNmYOVUQj/ykAOIduIRCvU0DDq
+  snsEndpoint: arn:aws:sns:ap-south-1:328558405581:AirQualityAlerts
+  dynamoDBEndpoint: dynamodb.ap-south-1.amazonaws.com
+  region: ap-south-1
